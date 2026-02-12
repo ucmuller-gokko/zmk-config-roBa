@@ -33,6 +33,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
@@ -43,10 +44,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA    &kp PERIOD                                                                    &kp F          &kp W    &kp R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O        &kp MINUS    &kp TAB                              &kp MINUS                   &kp K          &kp T    &kp N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp PLUS     &kp SLASH                            &kp SEMICOLON               &kp G          &lt 2 D  &kp M  &kp J  &mt RIGHT_SHIFT B
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 ENTER  &lt 2 SPACE  &lt_to_layer_0 3 LC(LANG_HANJA)      &mt RIGHT_WIN LANG_HANGEUL  &kp BACKSPACE                         &lt_to_layer_0 5 LC(ESCAPE)
+&kp Q             &kp L         &kp U         &kp COMMA    &kp PERIOD                                                     &kp F          &kp W    &kp R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O        &kp MINUS    &kp TAB               &kp MINUS                   &kp K          &kp T    &kp N  &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp PLUS     &kp SLASH             &kp SEMICOLON               &kp G          &lt 2 D  &kp M  &kp J  &mt RIGHT_SHIFT B
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 ENTER  &lt 2 SPACE  &lt 3 LANGUAGE_2      &mt RIGHT_WIN LANG_HANGEUL  &kp BACKSPACE                         &lt_to_layer_0 5 LC(ESCAPE)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -65,7 +66,7 @@
             bindings = <
 &kp EQUAL  &kp KP_NUMBER_9  &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp COMMA                                       &kp CARET         &kp HOME           &kp UP_ARROW    &kp END          &kp RIGHT_PARENTHESIS
 &kp COLON  &kp KP_NUMBER_6  &kp KP_NUMBER_5  &kp KP_NUMBER_4  &kp PERIOD       &kp PLUS       &kp UNDERSCORE  &kp PAGE_UP       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp SLASH  &kp KP_NUMBER_3  &kp KP_NUMBER_2  &kp KP_NUMBER_1  &kp KP_NUMBER_0  &kp MINUS      &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp LCLK       &mkp RCLK        &kp BACKSLASH
+&kp SLASH  &kp KP_NUMBER_3  &kp KP_NUMBER_2  &kp KP_NUMBER_1  &kp KP_NUMBER_0  &kp MINUS      &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mkp LCLK       &mkp RCLK        &kp BACKSLASH
 &trans     &trans           &trans           &trans           &trans           &trans         &kp RIGHT_GUI   &kp BACKSPACE                                                         &kp PIPE
             >;
         };
