@@ -13,43 +13,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
@@ -67,10 +31,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA    &kp PERIOD                                                                    &kp F            &kp W    &kp R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O        &kp MINUS    &kp TAB                              &kp MINUS                   &kp K            &kp T    &kp N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp PLUS     &kp SLASH                            &kp SEMICOLON               &kp G            &lt 2 D  &kp M  &kp J  &mt RIGHT_SHIFT B
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 ENTER  &lt 2 SPACE  &lt_to_layer_0 3 LC(LANG_HANJA)      &mt RIGHT_WIN LANG_HANGEUL  &lt 1 BACKSPACE                         &lt_to_layer_0 5 LC(ESCAPE)
+&kp Q             &kp L         &kp U         &kp COMMA    &kp PERIOD                                                                    &kp F          &kp W  &kp R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O        &kp MINUS    &kp TAB                              &kp MINUS                   &kp K          &kp T  &kp N  &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp PLUS     &kp SLASH                            &kp SEMICOLON               &kp G          &kp D  &kp M  &kp J  &mt RIGHT_SHIFT B
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 ENTER  &lt 2 SPACE  &lt_to_layer_0 3 LC(LANG_HANJA)      &mt RIGHT_WIN LANG_HANGEUL  &kp BACKSPACE                       &lt_to_layer_0 5 LC(ESCAPE)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -80,7 +44,7 @@
             bindings = <
 &kp PERCENT  &kp DOLLAR  &kp AMPERSAND   &kp LCTRL        &kp SLASH                                    &kp NON_US_BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
 &kp PLUS     &kp HASH    &kp ASTERISK    &kp AT_SIGN      &kp EQUAL     &trans      &kp LC(LG(SPACE))  &kp UNDERSCORE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON
-&kp MINUS    &kp GRAVE   &kp UNDERSCORE  &kp EXCLAMATION  &kp QUESTION  &trans      &trans             &kp PIPE              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT        &kp DOUBLE_QUOTES
+&kp MINUS    &kp GRAVE   &kp UNDERSCORE  &kp EXCLAMATION  &kp QUESTION  &trans      &kp TILDE          &kp PIPE              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT        &kp DOUBLE_QUOTES
 &kp LCTRL    &trans      &trans          &trans           &trans        &trans      &kp RIGHT_GUI      &kp BACKSPACE                                                                     &kp F12
             >;
         };
