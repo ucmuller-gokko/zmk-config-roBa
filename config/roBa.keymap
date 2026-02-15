@@ -74,8 +74,8 @@
         ARROW {
             bindings = <
 &kp F15         &kp F9  &kp F8         &kp F7  &kp F10                                            &kp LC(LA(ENTER))       &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(UP_ARROW)    &kp LA(LC(LG(RIGHT_ARROW)))  &kp LC(LA(MINUS))
-&kp F14         &kp F6  &kp F5         &kp F4  &kp C_VOLUME_UP  &trans      &trans                &kp LC(LA(LEFT_ARROW))  &kp LC(LEFT_ARROW)          &kp LC(DOWN_ARROW)  &kp LC(RIGHT_ARROW)          &kp LC(LA(RIGHT_ARROW))
-&kp LEFT_SHIFT  &kp F3  &kp F2         &kp F1  &kp C_VOL_DN     &trans      &trans                &kp LG(LEFT_ARROW)      &kp LG(RIGHT_ARROW)         &mkp LCLK           &mkp RCLK                    &kp RG(L)
+&kp F14         &kp F6  &kp F5         &kp F4  &kp C_VOLUME_UP  &trans      &bt BT_SEL 0          &kp LC(LA(LEFT_ARROW))  &kp LC(LEFT_ARROW)          &kp LC(DOWN_ARROW)  &kp LC(RIGHT_ARROW)          &kp LC(LA(RIGHT_ARROW))
+&kp LEFT_SHIFT  &kp F3  &kp F2         &kp F1  &kp C_VOL_DN     &trans      &bt BT_SEL 1          &kp LG(LEFT_ARROW)      &kp LG(RIGHT_ARROW)         &mkp LCLK           &mkp RCLK                    &kp RG(L)
 &trans          &trans  &kp LC(LG(Q))  &trans  &trans           &trans      &kp LS(LG(NUMBER_5))  &kp LS(LG(V))                                                                                        &trans
             >;
 
